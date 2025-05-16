@@ -1,0 +1,7 @@
+*.html
+*.pyc
+*.pyc
+*.pyc
+*.pyc
+/tests/assets
+*.pyc

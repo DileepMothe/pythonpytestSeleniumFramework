@@ -9,7 +9,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--browser_name", action="store", default="chrome", help="browser selection"
     )
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="class")
 def browser_setup(request):
     browser_name = request.config.getoption("browser_name")
     global driver
